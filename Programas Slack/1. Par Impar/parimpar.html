@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+Nombre: Par impar
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de valorar si un numero ingresado es par o impar.
+-->
+<head>
+	<title>Par-Impar</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="./css/estilo-parimpar.css">
+	<script>
+		function calcula(num){
+			if (num%2==0) {
+   				alert("El numero introducido es par");
+			}else {
+   				alert("El numero introducido es impar");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Calcular Numero par o impar</h1>
+	<div class="display">
+		<h2>Numero</h2>
+		<input type="text" id="num" class="numero" required><br>
+		<input type="button" class="botonnumero" value="Calcular" onclick="calcula(num.value)">
+	</div>
+</body>
+</html>

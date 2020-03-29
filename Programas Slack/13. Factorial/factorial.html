@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Factorial
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de calcular el factorial de un numero ingresado.
+-->
+<head>
+	<title>factorial</title>
+	<script>
+		function calcularSerie(){
+			var numero1 = document.getElementById("numero1").value;
+			var fact = 1;
+			for (var i = 1; i <= numero1; i++) {
+				var cont = i;
+				fact = fact * cont;
+			}
+			alert("El factorial es: " + fact);
+		}
+	</script>
+</head>
+<body>
+	<h1>Factorial</h1>
+	<div>
+		Ingrese el numero que desea<input type="number"  id="numero1" requiered><br>
+		<button onclick="calcularSerie()">Calcular</button>
+	</div>
+</body>
+</html>

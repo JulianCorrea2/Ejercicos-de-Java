@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Numero mayor
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de calcular el numero mayor entre 3 numeros.
+-->
+<head>
+	<title>Numero mayor</title>
+	<script>
+		function calcularMayor(){
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			var numero3 = document.getElementById("numero3").value;
+			var numMayor = Math.max(numero1, numero2, numero3);
+			alert("EL numero mayor de los 3 es: " +numMayor);
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculando el numero mayor entre 3</h1>
+	<div>
+		Ingrese el primer numero<input type="number"  id="numero1"requiered><br>
+		Ingrese el segundo numero<input type="number" id="numero2"  requiered><br>
+		Ingrese el tercer numero<input type="number"  id="numero3" requiered><br>
+		<button onclick="calcularMayor()">Calcular</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Nomina
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de calcular la nomina de un empleado.
+-->
+<head>
+	<title>Nomina</title>
+	<script>
+		function calcularNomina(){
+			var nombre = document.getElementById("nombre").value;
+			var horas = document.getElementById("horas").value;
+			var valorHora = document.getElementById("valorHora").value;
+			var salario = document.getElementById("salario").value;
+			var salarioT = horas * valorHora;
+			if (salarioT > salario ) {
+				alert("El salario de: " + nombre + " es de: " + salarioT);
+			}else{
+				alert("El nombre del empleado es: " +nombre);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Datos del empleado</h1>
+	<div>
+		Ingrese nombre del empleado<input type="text"  id="nombre" requiered><br>
+		Ingrese numero de horas trabajadas<input type="number" id="horas" requiered><br>
+		Ingrese valor hora<input type="number"  id="valorHora" requiered><br>
+		Ingrese valor salario minimo mensual<input type="number"  id="salario" requiered><br>
+		<button onclick="calcularNomina()">Calcular</button>
+	</div>
+</body>
+</html>

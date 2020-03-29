@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Numero Primo
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de valorar si el numero ingresado es primo o no.
+-->
+<head>
+	<title>Numeros primos</title>
+	<script>
+		function calcularSerie(){
+			var numero1 = document.getElementById("numero1").value;
+			var cont = 0;
+			for (var i = 1; i <= numero1; i++) {
+				var count = i;
+				if ((numero1 % count) == 0) {
+					cont = cont + 1;
+				}
+			}
+			if (cont <= 2) {
+				alert("El numero " + numero1 +" es primo");
+			}else{
+				alert("El numero " +numero1+" no es primo");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Numeros primos</h1>
+	<div>
+		Ingrese el numero a valorar<input type="number"  id="numero1" requiered><br>
+		<button onclick="calcularSerie()">Calcular</button>
+	</div>
+</body>
+</html>

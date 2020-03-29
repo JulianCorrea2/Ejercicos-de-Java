@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Serie de numeros
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de calcular la suma de N numeros y su promedio.
+-->
+<head>
+	<title>Serie numeros</title>
+	<script>
+		function calcularSerie(){
+			var numero1 = document.getElementById("numero1").value;
+			var suma = 0;
+			for (var i = 1; i <= numero1; i++) {
+				var cont = i;
+				suma = suma + cont;
+			}
+			var promedio = suma / numero1;
+			alert("La sumatoria de los numeros es de: " + suma + " el promedio es: " + promedio);
+		}
+	</script>
+</head>
+<body>
+	<h1>sumatoria y promedio</h1>
+	<div>
+		Ingrese la cantidad de numeros que desea<input type="number"  id="numero1" requiered><br>
+		<button onclick="calcularSerie()">Calcular</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Multiplo
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java, se encarga de calcular si los 2 numeros ingresados son multiplos.
+-->
+<head>
+	<title>Numero mayor</title>
+	<script>
+		function calcularMultiplo(){
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			var multiplo = numero1 % numero2;
+			if (multiplo == 0) {
+				alert("es multiplo");
+			}else{
+				alert("no es multiplo");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculando multiplo</h1>
+	<div>
+		Ingrese el primer numero<input type="number"  id="numero1"requiered><br>
+		Ingrese el segundo numero<input type="number" id="numero2"  requiered><br>
+		<button onclick="calcularMultiplo()">Calcular</button>
+	</div>
+</body>
+</html>

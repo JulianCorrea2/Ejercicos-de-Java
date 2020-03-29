@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Ordenacion
+Fecha: 29/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa de java,  se encarga de ordenar 3 numeros ingresados e indicando cual es el mayor, el del medio y el menor.
+-->
+<head>
+	<title>Ordenacion de numeros</title>
+	<script>
+		function calcularOrden(){
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			var numero3 = document.getElementById("numero3").value;
+			if (numero1 > numero2 && numero1 > numero3 && numero2 > numero3) {
+				alert("numero mayor: " + numero1 + " numero del medio: " + numero2 + " numero menor: " + numero3);
+			}else if (numero1 > numero2 && numero1 > numero3 && numero3 > numero2) {
+				alert("numero mayor: " + numero1 + " numero del medio: " + numero3 + " numero menor: " + numero2);
+			}else if (numero2 > numero1 && numero2 > numero3 && numero1 > numero3) {
+				alert("numero mayor: " + numero2 + " numero del medio: " + numero1 + " numero menor: " + numero3);
+			}else if (numero2 > numero1 && numero2 > numero3 && numero3 > numero1) {
+				alert("numero mayor: " + numero2 + " numero del medio: " + numero3 + " numero menor: " + numero1);
+			}else if (numero3 > numero1 && numero3 > numero2 && numero1 > numero2) {
+				alert("numero mayor: " + numero2 + " numero del medio: " + numero1 + " numero menor: " + numero3);
+			}else if (numero3 > numero1 && numero3 > numero2 && numero2 > numero1) {
+				alert("numero mayor: " + numero3 + " numero del medio: " + numero2 + " numero menor: " + numero1);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculando el orden de los numeros</h1>
+	<div>
+		Ingrese el primer numero<input type="number"  id="numero1"requiered><br>
+		Ingrese el segundo numero<input type="number" id="numero2"  requiered><br>
+		Ingrese el tercer numero<input type="number"  id="numero3" requiered><br>
+		<button onclick="calcularOrden()">Calcular</button>
+	</div>
+</body>
+</html>
